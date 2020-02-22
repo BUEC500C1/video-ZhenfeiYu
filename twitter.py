@@ -3,8 +3,8 @@ import os
 
 consumer_key = "********"
 consumer_secret = "********"
-access_token = ""********""
-access_secret = ""********""
+access_token = "********"
+access_secret = "********"
 
 def get_tweets(foldername,searchword):
     folder = os.path.exists('../'+foldername+'/'+foldername+'_images')
