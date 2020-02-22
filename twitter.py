@@ -1,10 +1,10 @@
 import tweepy
 import os
 
-consumer_key = "9uaPMvBVkwqkSH9jJJiNso6CN"
-consumer_secret = "M77H2f8BkDjX3dXaKBrz3ML4hD41zlMklpnT5JKB1z12HqEL3Y"
-access_token = "754494342287417344-l3ebBIaFLfywrhwjrJjR209RWCHpf5k"
-access_secret = "65THC1CIb9P3sNV1zKEODoLil2AdBdVTkcnFyYZhW72oB"
+consumer_key = "********"
+consumer_secret = "********"
+access_token = ""********""
+access_secret = ""********""
 
 def get_tweets(foldername,searchword):
     folder = os.path.exists('../'+foldername+'/'+foldername+'_images')
