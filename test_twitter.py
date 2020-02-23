@@ -6,10 +6,7 @@ def test_get_tweets():
     assert get_tweets('baekhyun','baekhyun')
     assert get_tweets('evanlin','evanlin')
     assert get_tweets('chanyeol','chanyeol')
-
 def main():
     pass
-
 if __name__ == "__main__":
     main()
-    
