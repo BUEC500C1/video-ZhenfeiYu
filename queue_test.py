@@ -1,7 +1,7 @@
 import queue
 import time
 import threading
-from get_video import get_video
+from get_video import *
 
 def work(i):
     while True:
@@ -10,13 +10,14 @@ def work(i):
             print("Number of task for thread is none")
             break
         print("Thread %s is processing on %s's task" %(i,num))
-
+        tweet2video(num,'us')
+        print("Thread %s finished %s's task"%(i, num))
         q.task_done()
 
 if __name__=='__main__':
     foldername = ['blakelively','sehun','baekhyun','evanlin','chanyeol','EXO']
     keyword = ['blakelively','sehun','baekhyun','evanlin','chanyeol','EXO']
-    source = (('blakelively','blakelively'),('sehun','sehun'),('baekhyun','baekhyun'),('evanlin','evanlin'),('chanyeol','chanyeol'),('EXO','EXO'))
+    # source = (('blakelively','blakelively'),('sehun','sehun'),('baekhyun','baekhyun'),('evanlin','evanlin'),('chanyeol','chanyeol'),('EXO','EXO'))
     num_of_threads = 3
     q = queue.Queue()
     threads = []
