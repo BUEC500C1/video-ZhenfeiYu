@@ -2,7 +2,6 @@ import tweepy
 import os
 import json
 from keys import *
-import tweepy
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)  
 auth.set_access_token(access_token, access_token_secret)   
@@ -10,9 +9,9 @@ api = tweepy.API(auth)
 
 
 def get_tweets(foldername,searchword):
-    folder = os.path.exists('../'+foldername+'/'+foldername+'_images')
+    folder = os.path.exists(foldername+'/'+foldername+'_images')
     if not folder:                   
-        os.makedirs('../'+foldername+'/'+foldername+'_images')           
+        os.makedirs(foldername+'/'+foldername+'_images')           
         print ("Building new folder...")
     else:
         print ("This folder exits!")
@@ -43,7 +42,7 @@ def get_tweets(foldername,searchword):
         print("%s tweets found." % (len(alltweets)))   
         
         list_word = []
-        x = '../'+foldername+'/'+foldername+".txt"
+        x = foldername+'/'+foldername+".txt"
         f = open(x,"a+")
         for j in alltweets:
             list_word.append(j.text)
