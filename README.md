@@ -41,4 +41,4 @@ foldername = ['blakelively','sehun','baekhyun','evanlin','chanyeol','EXO']
 ```
 <div align=center><img src="https://github.com/BUEC500C1/video-ZhenfeiYu/blob/master/images/queue.png"/></div>
 Output files:
-<div align=center><img src=""/></div>
+<div align=center><img src="https://github.com/BUEC500C1/video-ZhenfeiYu/blob/master/images/queue_file.png"/></div>
