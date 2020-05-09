@@ -33,10 +33,12 @@ video=cv2.VideoWriter('../'+foldername+'/'+foldername+'.avi',cv2.VideoWriter_fou
 ## Queue System
 * Develop a queue system that can exercise your requirements with stub functions.
 * Develop the twitter functionality with an API.
-* Integrate them
+* Integrate them  
+For queue system task, I set the number of threads to 3, and give the system 6 tasks to finish:
 ```
 foldername = ['blakelively','sehun','baekhyun','evanlin','chanyeol','EXO']
     keyword = ['blakelively','sehun','baekhyun','evanlin','chanyeol','EXO']
-    source = (('blakelively','blakelively'),('sehun','sehun'),('baekhyun','baekhyun'),('evanlin','evanlin'),('chanyeol','chanyeol'),('EXO','EXO'))
 ```
-<div align=center><img src="https://github.com/BUEC500C1/video-ZhenfeiYu/blob/master/images/1.png"/></div>
+<div align=center><img src="https://github.com/BUEC500C1/video-ZhenfeiYu/blob/master/images/queue.png"/></div>
+Output files:
+<div align=center><img src=""/></div>
